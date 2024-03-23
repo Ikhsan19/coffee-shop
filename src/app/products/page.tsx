@@ -15,7 +15,7 @@ export default function Menu() {
                     <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12 container mx-auto">
                         {Products.map((product) => {
                             return (
-                                <div className="mb-12 md:mb-0 sm:mb-1 p-6 mt-10" key={product.title}>
+                                <div className="mb-0 sm:mb-1 p-6 mt-10" key={product.title}>
                                     <div className="mb-6 flex justify-center">
                                         <Image src={product.image} width={400} height={400} alt="Product Image" loading="eager" />
                                     </div>
