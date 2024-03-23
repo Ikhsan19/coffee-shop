@@ -21,12 +21,12 @@ export default async function Team() {
     const { results } = await getData();
     return (
         <div className="mb-20">
-            <div className="text-center mt-32">
+            <div className="text-center mt-10 lg:mt-32">
                 <h2 className="text-4xl font-bold mb-4">Our Teams</h2>
                 <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12 container mx-auto">
                     {results.map((res: ITeams, index: number) => {
                         return (
-                            <div className="mb-12 md:mb-0 sm:mb-1 p-6 mt-10 border border-gray-600" key={res.login.uuid}>
+                            <div className="mb-0 md:mb-0 sm:mb-1 lg:mb-2 p-6 mt-10 border border-gray-600" key={res.login.uuid}>
                                 <div className="mb-6 flex justify-center">
                                     <Image
                                         src={res.picture.large}

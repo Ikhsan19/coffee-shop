@@ -9,13 +9,13 @@ export default function Home() {
             <div>
                 <Hero />
             </div>
-            <div className="mt-40 mb-20">
+            <div className="mt-24 lg:mt-40 lg:mb-20">
                 <Overview />
             </div>
-            <div className="mt-40">
+            <div className="mt-24 lg:mt-40">
                 <ProductSection />
             </div>
-            <div className="mt-40 mb-20">
+            <div className="mt-24 mb-10 lg:mt-40 lg:mb-20">
                 <Testimonial />
             </div>
         </div>
