@@ -28,24 +28,16 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                         </button>
                         <ul className="hidden md:flex gap-x-20 text-white ">
                             <li>
-                                <Link href="/">
-                                    <p>Home</p>
-                                </Link>
+                                <Link href="/">Home</Link>
                             </li>
                             <li>
-                                <Link href="/about">
-                                    <p>About</p>
-                                </Link>
+                                <Link href="/about">About</Link>
                             </li>
                             <li>
-                                <Link href="/products">
-                                    <p>Products</p>
-                                </Link>
+                                <Link href="/products">Products</Link>
                             </li>
                             <li>
-                                <Link href="/teams">
-                                    <p>Teams</p>
-                                </Link>
+                                <Link href="/teams">Teams</Link>
                             </li>
                         </ul>
                     </div>
