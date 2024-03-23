@@ -10,7 +10,7 @@ export default function About() {
                 </div>
             </div>
             <div className="container mx-auto">
-                <div className="mt-20 flex justify-between flex-col-reverse gap-y-10 text-center sm:flex-col-reverse sm:gap-y-4 sm:text-center lg:flex-row lg:gap-x-16 lg:text-left">
+                <div className="mt-20 flex justify-between flex-col-reverse gap-y-10 text-center sm:flex-col-reverse sm:gap-y-10 sm:text-center lg:flex-row lg:gap-x-16 lg:text-left">
                     <div className="sm:w-full lg:w-1/2 my-auto">
                         <h3 className="text-3xl font-bold mb-6">Our Beginning</h3>
                         <p>KahawaStreet is one of the coffee shops in Bima. It was founded by a young man in 2018. He man started this business in a simple rented house on Jalan Lintas Bima-Sumbawa.</p>
@@ -19,7 +19,7 @@ export default function About() {
                         <Image src="/about/about-1.avif" alt="Our Beginning Image" width={700} height={500} />
                     </div>
                 </div>
-                <div className="mt-20 mb-32 flex justify-between flex-col gap-y-10 text-center sm:flex-col sm:gap-y-4 sm:text-center lg:flex-row lg:gap-x-16 lg:text-left">
+                <div className="mt-20 mb-32 flex justify-between flex-col gap-y-10 text-center sm:flex-col sm:gap-y-10 sm:text-center lg:flex-row lg:gap-x-16 lg:text-left">
                     <div className="lg:w-1/2 sm:w-full">
                         <Image src="/about/about-2.avif" alt="Our Backgrounds Image" width={700} height={500} />
                     </div>
