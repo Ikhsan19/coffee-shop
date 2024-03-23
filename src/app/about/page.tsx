@@ -16,12 +16,12 @@ export default function About() {
                         <p>KahawaStreet is one of the coffee shops in Bima. It was founded by a young man in 2018. He man started this business in a simple rented house on Jalan Lintas Bima-Sumbawa.</p>
                     </div>
                     <div className="lg:w-1/2 sm:w-full">
-                        <Image src="/about/about-1.avif" alt="Our Beginning Image" width={0} height={0} style={{ width: '100%' }} />
+                        <Image src="/about/about-1.avif" alt="Our Beginning Image" width={700} height={500} />
                     </div>
                 </div>
                 <div className="mt-20 mb-32 flex justify-between lg:flex-row lg:gap-x-16 lg:text-left sm:flex-col sm:gap-y-4 sm:text-center">
                     <div className="lg:w-1/2 sm:w-full">
-                        <Image src="/about/about-2.avif" alt="Our Backgrounds Image" width={0} height={0} style={{ width: '100%' }} />
+                        <Image src="/about/about-2.avif" alt="Our Backgrounds Image" width={700} height={500} />
                     </div>
                     <div className="lg:w-1/2 sm:w-full my-auto">
                         <h3 className="text-3xl font-bold mb-6">Our Backgrounds</h3>
