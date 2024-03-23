@@ -10,7 +10,7 @@ export default function Overview() {
 
             </div>
             <div className="lg:w-1/2 sm:w-full">
-                <Image src="/home/overview/overview-photo.avif" alt="Overview Image" width={0} height={0} style={{ width: '100%' }} />
+                <Image src="/home/overview/overview-photo.avif" alt="Overview Image" width={500} height={500} />
             </div>
         </div>
     )
