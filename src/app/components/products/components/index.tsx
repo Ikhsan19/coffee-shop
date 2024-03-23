@@ -12,6 +12,7 @@ import Link from "next/link"
 export default function ProductSlider() {
     return (
         <div className="container mx-auto flex items-center justify-center flex-col">
+            <h2 className="text-4xl font-bold mb-16">Products</h2>
             <Swiper
                 breakpoints={{
                     640: {
