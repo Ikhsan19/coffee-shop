@@ -17,7 +17,7 @@ async function getData() {
     }
 }
 
-export default async function Team() {
+export default async function Testimonial() {
     const { results } = await getData();
     return (
         <div className="container mx-auto">
