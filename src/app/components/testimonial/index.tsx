@@ -19,7 +19,7 @@ export default async function Testimonial() {
     return (
         <div className="container mx-auto">
             <div className="w-full text-center sm:w-full sm:text-center lg:w-1/2 lg:text-left mb-10">
-                <h2 className="mb-4 text-4xl font-bold">Read trusted reviews from our customers</h2>
+                <h3 className="mb-4 text-4xl font-bold">Read trusted reviews from our customers</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus ea reiciendis minima quae! Repudiandae fuga porro illo possimus iure aperiam optio labore cum eveniet in quaerat, ipsam ducimus. Id, consequatur?</p>
             </div>
             <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12 text-center">
