@@ -5,7 +5,7 @@ export default function About() {
     return (
         <div>
             <div className="h-[500px] bg-cover bg-center" style={{ backgroundImage: "url(/about/about.avif)" }}>
-                <div className="container mx-auto flex items-center justify-center h-full">
+                <div className="h-full w-full flex items-center justify-center bg-black bg-opacity-40">
                     <h1 className="text-white font-bold text-6xl line-through">About</h1>
                 </div>
             </div>

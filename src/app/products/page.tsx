@@ -6,8 +6,8 @@ export default function Menu() {
     return (
         <div className="mb-20">
             <div className="h-[500px] bg-cover bg-center" style={{ backgroundImage: "url(/about/about.avif)" }}>
-                <div className="container mx-auto flex items-center justify-center h-full">
-                    <h1 className="text-white font-bold text-6xl line-through">Products</h1>
+                <div className="h-full w-full flex items-center justify-center bg-black bg-opacity-40">
+                    <h1 className="text-white font-bold text-6xl line-through">Product</h1>
                 </div>
             </div>
             <div className="mb-20">
