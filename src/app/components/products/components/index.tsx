@@ -43,7 +43,7 @@ export default function ProductSlider() {
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <Link href="/products" className="bg-[#6F4E37] hover:bg-brown p-3 text-white mt-10">All Menu</Link>
+            <Link href="/products" className="bg-brown hover:bg-[#6F4E37] p-3 text-white mt-10">All Menu</Link>
         </div>
     )
 }
