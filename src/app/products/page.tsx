@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Products } from "./types/products";
+import Testimonial from "../components/testimonial";
 
 export default function Menu() {
     return (
@@ -9,7 +10,7 @@ export default function Menu() {
                     <h1 className="text-white font-bold text-6xl line-through">Products</h1>
                 </div>
             </div>
-            <div>
+            <div className="mb-20">
                 <div className="text-center mt-32">
                     <h2 className="text-4xl font-bold">All Menu</h2>
                     <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12 container mx-auto">
@@ -27,6 +28,7 @@ export default function Menu() {
                     </div>
                 </div>
             </div>
+            <Testimonial />
         </div>
     )
 };
