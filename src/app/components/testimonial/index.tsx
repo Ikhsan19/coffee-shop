@@ -5,10 +5,7 @@ import { allTestimonial } from "./types/testimonial";
 async function getData() {
     try {
         const dynamicData = await fetch(
-            `https://randomuser.me/api/?results=3&nat=us`,
-            {
-                next: { revalidate: 10 },
-            }
+            `https://randomuser.me/api/?results=3&nat=us`
         );
         const response = await dynamicData.json();
         return response;
