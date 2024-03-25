@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Sidebar = ({
     isOpen,
@@ -7,10 +8,11 @@ const Sidebar = ({
     isOpen: boolean;
     toggle: () => void;
 }): JSX.Element => {
+    const pathname = usePathname();
     return (
         <>
             <div
-                className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white grid pt-[120px] left-0 z-10"
+                className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-black bg-opacity-90 grid pt-[150px] left-0 z-20"
                 style={{
                     opacity: `${isOpen ? "1" : "0"}`,
                     top: ` ${isOpen ? "0" : "-100%"}`,
@@ -25,30 +27,30 @@ const Sidebar = ({
                         viewBox="0 0 24 24"
                     >
                         <path
-                            fill="currentColor"
+                            fill="#fff"
                             d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
                         />
                     </svg>
                 </button>
 
-                <ul className="sidebar-nav text-center leading-relaxed text-xl">
-                    <li className="pb-6">
-                        <Link href="/" onClick={toggle}>
+                <ul className="sidebar-nav text-center leading-relaxed font-bold text-lg text-white">
+                    <li className="pb-16">
+                        <Link href="/" onClick={toggle} className={`link ${pathname === '/' ? 'active' && 'text-[#6F4E37]' : ''}`}>
                             Home
                         </Link>
                     </li>
-                    <li className="pb-6">
-                        <Link href="/about" onClick={toggle}>
+                    <li className="pb-16">
+                        <Link href="/about" onClick={toggle} className={`link ${pathname === '/about' ? 'active' && 'text-[#6F4E37]' : ''}`}>
                             About
                         </Link>
                     </li>
-                    <li className="pb-6">
-                        <Link href="/products" onClick={toggle}>
+                    <li className="pb-16">
+                        <Link href="/products" onClick={toggle} className={`link ${pathname === '/products' ? 'active' && 'text-[#6F4E37]' : ''}`}>
                             Products
                         </Link>
                     </li>
                     <li>
-                        <Link href="/teams" onClick={toggle}>
+                        <Link href="/teams" onClick={toggle} className={`link ${pathname === '/teams' ? 'active' && 'text-[#6F4E37]' : ''}`}>
                             Teams
                         </Link>
                     </li>
