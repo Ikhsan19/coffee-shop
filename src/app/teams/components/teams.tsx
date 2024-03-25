@@ -5,10 +5,7 @@ import { allTeams } from "../types/teams";
 async function getData() {
     try {
         const dynamicData = await fetch(
-            `https://randomuser.me/api/?results=6&nat=us`,
-            {
-                next: { revalidate: 10 },
-            }
+            `https://randomuser.me/api/?results=6&nat=us`
         );
         const response = await dynamicData.json();
         return response;

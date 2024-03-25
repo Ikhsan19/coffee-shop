@@ -11,9 +11,6 @@ const config: Config = {
       colors: {
         brown: "#C8A27A"
       },
-      fontFamily: {
-        sans: ["Montserrat", "sans-serif"]
-      },
       container: {
         padding: {
           DEFAULT: "1rem",
