@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-// import brandimage from "@/app/brand-logo.webp"
 import brandLogo from "@/app/assets/brand-logo.png"
 
 const Logo = () => {
