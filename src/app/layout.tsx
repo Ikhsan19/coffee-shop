@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navigation";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/footer";
 
 const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kahawa Street",
+  title: "KahawaStreet",
   description: "Indulge in the Aroma and Warmth of Coffee",
 };
 

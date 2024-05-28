@@ -1,11 +1,11 @@
-import Hero from "./components/hero";
-import Overview from "./components/overview";
-import ProductSection from "./components/products/components";
-import Testimonial from "./components/testimonial"
+import Hero from "../components/hero";
+import Overview from "../components/overview";
+import ProductSection from "../components/products";
+import Testimonial from "../components/testimonial"
 
-export default function Home() {
+const Home = () => {
     return (
-        <div>
+        <main>
             <div>
                 <Hero />
             </div>
@@ -18,6 +18,8 @@ export default function Home() {
             <div className="mt-24 mb-10 lg:mt-40 lg:mb-20">
                 <Testimonial />
             </div>
-        </div>
+        </main>
     );
 }
+
+export default Home;

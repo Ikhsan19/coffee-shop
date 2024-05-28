@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { ITeams } from "../types/teams.interface";
-import { allTeams } from "../types/teams";
+import { ITeams } from "../team/types/teams.interface"
+import { allTeams } from "./types/teams";
 
 async function getData() {
     try {

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Team from "../teams/components/teams";
+import Team from "@/components/team";
 
-export default function About() {
+const About = () => {
     return (
         <div>
             <div className="h-[500px] bg-cover bg-center" style={{ backgroundImage: "url(/about/about.avif)" }}>
@@ -40,3 +40,4 @@ export default function About() {
     )
 };
 
+export default About;

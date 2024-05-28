@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Products } from "./types/products";
-import Testimonial from "../components/testimonial";
+import Testimonial from "../../components/testimonial";
 
-export default function Menu() {
+const Menu = () => {
     return (
         <div className="mb-20">
             <div className="h-[500px] bg-cover bg-center" style={{ backgroundImage: "url(/about/about.avif)" }}>
@@ -16,15 +16,15 @@ export default function Menu() {
                     <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12 container mx-auto">
                         {Products.map((product) => {
                             return (
-                                <div className="mb-0 sm:mb-1 p-6 mt-10" key={product.title}>
-                                    <div className="mb-6 flex justify-center">
+                                <div className="mb-0 sm:mb-1 p-6 mt-10 cursor-pointer" key={product.title}>
+                                    <div className="mb-6 flex justify-center relative">
+                                        <div className="absolute inset-0 bg-black opacity-10 hover:opacity-50" />
                                         <Image src={product.image} width={400} height={400} alt="Product Image" loading="eager" />
                                     </div>
                                     <h4 className="text-2xl font-bold">{product.title}</h4>
                                 </div>
-                            )
+                            );
                         })}
-
                     </div>
                 </div>
             </div>
@@ -33,3 +33,4 @@ export default function Menu() {
     )
 };
 
+export default Menu;

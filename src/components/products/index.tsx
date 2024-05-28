@@ -6,10 +6,10 @@ import 'swiper/css/pagination'
 import 'swiper/css/free-mode'
 
 import { FreeMode, Pagination } from "swiper/modules"
-import { ProductData } from "../types"
-import Link from "next/link"
+import { ProductData } from "./types"
+import LinkCTA from "../link-cta"
 
-export default function ProductSlider() {
+const ProductSlider = () => {
     return (
         <div className="container mx-auto flex items-center justify-center flex-col">
             <h2 className="text-4xl font-bold mb-16">Products</h2>
@@ -43,7 +43,14 @@ export default function ProductSlider() {
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <Link href="/products" className="bg-brown hover:bg-[#6F4E37] p-3 text-white mt-10">All Menu</Link>
+            <LinkCTA
+                href="/products"
+                classname="bg-brown hover:bg-[#6F4E37] p-3 text-white mt-10"
+                text="All Menu"
+            />
+
         </div>
     )
 }
+
+export default ProductSlider;
